@@ -8,6 +8,8 @@ doc_to_target: "{{['(A)', '(B)', '(C)', '(D)'][answer]}}"
 generation_kwargs:
   until:
     - "</s>"
+    - "Q"
+    - "\n\n"
 metric_list:
   - metric: exact_match
     aggregation: mean
